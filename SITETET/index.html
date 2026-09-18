@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Раймут — Впереди вечность.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars" aria-hidden="true"></div>
+
+<header>
+  <div class="logo">РАЙМУТ</div>
+  <nav>
+    <a href="#about">Обо мне</a>
+    <a href="#science">Исследования</a>
+    <a href="#works">Работы</a>
+    <a href="#contact">Контакт</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <h1 class="title">Впереди —<em>вечность.</em></h1>
+    <blockquote class="hero-quote">
+      «Богам спешить некуда. У них впереди вечность.»
+      <cite>Братья Стругацкие, «Трудно быть богом».</cite>
+    </blockquote>
+    <div class="hero-actions">
+      <a href="#works" class="btn">Мои работы</a>
+      <a href="#contact" class="btn solid">Связаться</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <svg class="blackhole" viewBox="0 0 600 600" aria-hidden="true">
+      <defs>
+        <radialGradient id="holeHalo" cx="46%" cy="46%" r="60%">
+          <stop offset="0%" stop-color="#6a6a67" stop-opacity="0.16"/>
+          <stop offset="45%" stop-color="#123" stop-opacity="0.08"/>
+          <stop offset="100%" stop-color="#0a0e24" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="diskRing" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#6a6a67" stop-opacity="0.5"/>
+          <stop offset="35%" stop-color="#6aaa" stop-opacity="0.95"/>
+          <stop offset="60%" stop-color="#03152" stop-opacity="0.85"/>
+          <stop offset="100%" stop-color="#151BS4" stop-opacity="0.35"/>
+        </linearGradient>
+        <linearGradient id="diskRingInner" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#7fa0e0" stop-opacity="0.7"/>
+          <stop offset="45%" stop-color="#1F305E" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#123" stop-opacity="0.6"/>
+        </linearGradient>
+      </defs>
+
+      <circle cx="300" cy="300" r="280" fill="url(#holeHalo)"/>
+
+      <!-- outer accretion disk -->
+      <ellipse cx="300" cy="300" rx="272" ry="76" fill="none" stroke="url(#diskRing)" stroke-width="20" opacity="0.75"/>
+      <!-- bright inner edge of the disk -->
+      <ellipse cx="300" cy="300" rx="272" ry="76" fill="none" stroke="url(#diskRingInner)" stroke-width="4" opacity="0.9"/>
+
+      <!-- event horizon: swallows the middle of the disk -->
+      <circle cx="300" cy="300" r="118" fill="#04040a"/>
+
+      <!-- photon ring -->
+      <circle cx="300" cy="300" r="118" fill="none" stroke="#fbe3b8" stroke-opacity="0.6" stroke-width="1.4"/>
+
+      <!-- lensing arc: light bent up and over the top of the horizon -->
+      <path d="M186,300 A114,44 0 0,1 414,300" fill="none" stroke="url(#diskRingInner)" stroke-width="7" opacity="0.85"/>
+    </svg>
+
+    <div class="scribble formula">R<sub>s</sub> = 2GM / c²</div>
+    <div class="scribble hope">Пока дышу —<br>надеюсь.</div>
+
+    <div class="desk-edge"></div>
+  </div>
+
+  <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
+</section>
+
+<section class="section" id="about">
+  <span class="eyebrow" style="padding-left:48px; margin-left:-48px;"></span>
+  <div class="about">
+    <div class="about-photo">
+      <img src="photo_2026-09-01_21-41-04.jpg" alt="Портрет">
+      <div class="photo-tag">РАЙМУТ</div>
+    </div>
+
+    <div class="about-body">
+      <span class="eyebrow">Обо мне</span>
+      <h2 class="about-name">Екатерина<br>Лобас — Раймут</h2>
+      <div class="about-text">
+        <p>Пишу стихи, рассказы и исследую мир через призму науки, искусства и личного опыта. Интересуюсь астрофизикой, квантовой механикой, литературой, музыкой и тем, что делает нас живыми — даже когда кажется, что всё потеряно.</p>
+      </div>
+      <div class="about-quote">
+        «Жизнь тебе для того дана, чтобы ты посвятил её физике.»
+        <footer>— Я.</footer>
+      </div>
+    </div>
+
+    <div class="about-facts">
+      <div class="fact"><div class="ring"></div><div><div class="fact-num">2010</div><div class="fact-label">год рождения</div></div></div>
+      <div class="fact infinity"><div class="ring"></div><div><div class="fact-num">Небо над нами</div></div></div>
+      <p class="note">Люблю котов, книги, музыку, долгие ночи и людей, которые остаются.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="science">
+  <div class="section-head" style="position:relative;">
+    <span class="eyebrow">Исследования</span>
+    <h2 class="h-title">Наука</h2>
+    <div class="about-quote">Реальность — это просто не самая интересная версия.</div>
+  </div>
+
+  <div class="science-grid">
+    <div class="science-card">
+      <div class="science-icon">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M13 1 L24 7 L24 19 L13 25 L2 19 L2 7 Z"/></svg>
+      </div>
+      <h3>Квантовая психиатрия</h3>
+      <span class="science-tag">Consciousness Studies</span>
+      <p>Любительское исследование сознания в поле идей о наблюдателе, неопределённости и природе субъективного опыта.</p>
+    </div>
+    <div class="science-card">
+      <div class="science-icon">
+        <svg width="30" height="18" viewBox="0 0 30 18" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M1 9 C 6 1, 9 17, 15 9 C 21 1, 24 17, 29 9"/></svg>
+      </div>
+      <h3>Квантовая физика</h3>
+      <span class="science-tag">Quantum Physics</span>
+      <p>Теория струн, квантовые норы, квантовая суперпозиция и поиски формы для самых красивых вопросов о реальности.</p>
+    </div>
+    <div class="science-card">
+      <div class="science-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3" fill="currentColor" stroke="none"/></svg>
+      </div>
+      <h3>Небо и текст</h3>
+      <span class="science-tag">Astronomy · Literature</span>
+      <p>Программы для астрономических моделей, стихи и сказки — способы приблизиться к космосу с разных сторон.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="works">
+  <div class="section-head">
+    <span class="eyebrow">Публикации</span>
+    <h2 class="h-title">Работы</h2>
+  </div>
+
+  <div class="pub-list">
+    <a class="pub-row" href="http://127.0.0.1:5500/SITETET/статьи/quantum-psychiatry.html"><span class="num">01</span><span class="title-text">Квантовая психиатрия: заметки к теории сознания</span><span class="arrow">→</span></a>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="self-grid">
+    <div>
+      <span class="eyebrow">Обо всём</span>
+      <h2 class="h-title" style="margin-bottom:22px;">О себе</h2>
+      <div class="self-text">
+        <p>Я — Екатерина Лобас, работаю под псевдонимом Раймут. Художница, поэтесса и студентка технического колледжа из Донецка. Родилась в 2010 году: собираю собственный язык для разговора о космосе, человеке и том, что между ними.</p>
+      </div>
+    </div>
+
+    <div class="self-quote">
+      «Мои предки — звёзды, над тобой головой. Мы на 97% состоим из звёздной пыли, а значит, мы никогда не одиноки.»
+      <footer>— Я.</footer>
+    </div>
+
+    <div class="self-stats">
+      <div><div class="fact-num">2025</div><div class="fact-label">научный путь</div></div>
+      <div><div class="fact-num">∞</div><div class="fact-label">небо над нами</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-bottom:80px;">
+  <div class="section-head" style="margin-bottom:36px;">
+    <span class="eyebrow">Архив</span>
+  </div>
+  <div class="archive-grid">
+    <div class="archive-item">
+      <img src="photo_2026-09-01_21-41-04 (2).jpg" alt="Архивная запись 1">
+    </div>
+    <div class="archive-item">
+      <img src="photo_2026-09-01_21-41-04 (3).jpg" alt="Архивная запись 2">
+    </div>
+    <div class="archive-item">
+      <img src="photo_2026-09-18_09-35-58 (2).jpg" alt="Архивная запись 3">
+    </div>
+    <div class="archive-item">
+      <img src="photo_2026-09-18_09-35-58.jpg" alt="Архивная запись 4">
+    </div>
+    <div class="archive-item">
+      <img src="photo_2026-09-18_09-35-59.jpg" alt="Архивная запись 5">
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="https://vk.ru/siriusshir">ВКонтакте</a>
+    <a href="http://my.mail.ru/mail/katy_lobas2010">Почта mail.ru</a>
+  </div>
+  <div class="lang-switch"><span class="active">RU</span><span>/</span><span>EN</span></div>
+</footer>
+
+</body>
+</html>
